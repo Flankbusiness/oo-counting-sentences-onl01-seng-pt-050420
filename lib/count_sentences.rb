@@ -1,4 +1,4 @@
-lass String
+class String
 
   def sentence?
 
@@ -20,4 +20,3 @@ lass String
     self.scan(/[^\.!?]+[\.!?]/).map(&:strip).count
   end
 end 
-end
