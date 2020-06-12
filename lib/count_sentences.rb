@@ -1,4 +1,4 @@
-class String
+lass String
 
   def sentence?
 
@@ -17,7 +17,7 @@ class String
 
   def count_sentences
 
-    self.scan(/[.?!]+/).length
+    self.scan(/[^\.!?]+[\.!?]/).map(&:strip).count
   end
 end 
 end
